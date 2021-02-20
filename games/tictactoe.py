@@ -1,9 +1,10 @@
 from discord.ext import commands
+from decouple import config
 import discord
 import random
 
 client = commands.Bot(command_prefix='!')
-token = 'ODEyNzIzMjI3MjYzNjMxMzYw.YDE5fQ.cqfiOKoi3fGA-wLAP3jIG_EtETo'
+token = config('TOKEN')
 
 player1 = ''
 player2 = ''

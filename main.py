@@ -1,7 +1,8 @@
 import discord
+from decouple import config
 
 client = discord.Client()
-token = 1
+token = config('TOKEN')
 
 
 @client.event
