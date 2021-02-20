@@ -14,14 +14,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('!announce'):
-        await message.channel.send('Use this channel to interact with the Sig Sauce Game Bot.',
-                                   'Games that are currently working:',
-                                   '!tictactoe',
-                                   '',
-                                   '!tictactoe usage:',
-                                   'Start a game with !tictactoe @player1 @player2.',
-                                   'Place your marker with !place <1-9>')
+    if message.content.startswith('!hello'):
+        await message.channel.send('hello')
 
 
 client.run(token)
